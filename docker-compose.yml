@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: security-db
+    environment:
+      POSTGRES_DB: security-db
+      POSTGRES_USER: demir
+      POSTGRES_PASSWORD: scrty123
+    ports:
+      - '5050:5432'
