@@ -5,7 +5,7 @@ Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 ## Adım 1: Docker imajını indirme
 
 Projeyi çalıştırmadan önce Docker üzerinden PostgreSQL veritabanının containerini oluşturmamız gerekiyor.
-bunun için aşağdaki komutu terminale yazmanız gerekiyor
+bunun için aşağdaki komutu terminale yazmanız gerekiyor.
 
 ```bash
 docker-compose up
@@ -23,7 +23,7 @@ docker-compose up
 - **GET** `/api/v1/book/{id}`
     - Açıklama: ID'ye göre bir kitap al.
 
-### Sepet (Cart) Endpointleri
+### Sepet Endpointleri
 
 - **GET** `/api/v1/sepet/getByUserId/{userId}`
     - Açıklama: Kullanıcı ID'sine göre sepet öğelerini al.
@@ -45,3 +45,16 @@ docker-compose up
 
 - **POST** `/api/v1/payment/save/{userId}`
     - Açıklama: Bir kullanıcının ödeme detaylarını kaydet.
+
+## Alternatif Kurulum DOCKER
+### Adım 1: Docker imajını indirme
+
+Projeyi çalıştırmak için öncelikle DockerHub'dan Docker imajını indirin:
+
+```bash
+docker pull demirrs/bookstore
+````
+## Adım 2: Docker konteynerini başlatma
+```bash
+docker run -d --name bookstore -p 8080:8080 demirrs/bookstore
+````
