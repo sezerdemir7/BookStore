@@ -2,7 +2,15 @@
 
 Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-## Adım 1: Docker imajını indirme
+## Adım 1: Projeyi Klonlama
+Öncelikle projeyi 
+```bash
+git clone https://github.com/sezerdemir7/BookStore.git
+````
+
+komutu ile klonlayın
+
+## Adım 2: Docker imajını indirme ve Container oluşturma
 
 Projeyi çalıştırmadan önce Docker üzerinden PostgreSQL veritabanının containerini oluşturmamız gerekiyor.
 bunun için aşağdaki komutu terminale yazmanız gerekiyor.
@@ -10,7 +18,8 @@ bunun için aşağdaki komutu terminale yazmanız gerekiyor.
 ```bash
 docker-compose up
 ````
-## Adım 2: Projeyi Çalıştırma
+## Adım 3: Projeyi Çalıştırma
+Bu işlemleri yaptıktan sonra projeyi çalıştırabilirsiniz.
 
 ## API Endpointleri
 
