@@ -67,3 +67,6 @@ docker pull demirrs/bookstore
 ```bash
 docker run -d --name bookstore -p 8080:8080 demirrs/bookstore
 ````
+
+
+git commit -m "SCRUM-26 <message>"git commit -m "SCRUM-26 <message>"git commit -m "SCRUM-26 <message>"git commit -m "SCRUM-26 <message>"git commit -m "SCRUM-26 <message>"
